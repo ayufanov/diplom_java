@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="window" alignment="CENTER" onMouseClicked="#initialize" prefHeight="1080.0" prefWidth="1920.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox fx:id="hbox22" prefHeight="49.0" prefWidth="1880.0">
+      <children>
+         <HBox fx:id="hbox21" prefHeight="26.0" prefWidth="160.0" />
+      </children>
+   </HBox>
+   <TableView fx:id="table" editable="true" prefHeight="851.0" prefWidth="1876.0">
+     <columns>
+       <TableColumn fx:id="Id" prefWidth="100.0" text="ID" />
+       <TableColumn fx:id="measure_num" prefWidth="136.0" text="№  меры" />
+         <TableColumn fx:id="bdu_id" prefWidth="75.0" text="BDU ID" />
+         <TableColumn fx:id="Software_name" minWidth="0.0" prefWidth="478.0" text="Название ПО" />
+         <TableColumn fx:id="soft_type" minWidth="0.0" prefWidth="210.0" text="Тип ПО" />
+         <TableColumn fx:id="Soft_version" minWidth="0.0" prefWidth="189.0" text="Версия ПО" />
+         <TableColumn fx:id="Status" prefWidth="181.0" text="Статус" />
+     </columns>
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
+   </TableView>
+
+    <Label fx:id="welcomeText" />
+   <HBox fx:id="big_hbox" prefHeight="181.0" prefWidth="311.0">
+      <children>
+         <VBox fx:id="big_vbox" prefHeight="181.0" prefWidth="600.0">
+            <children>
+               <HBox fx:id="hbox1" prefHeight="55.0" prefWidth="350.0">
+                  <children>
+                     <TextField fx:id="text_field" prefHeight="25.0" prefWidth="304.0" />
+                  </children>
+               </HBox>
+               <HBox fx:id="hbox2" prefHeight="60.0" prefWidth="1269.0">
+                  <children>
+                     <Button fx:id="button_choose" mnemonicParsing="false" onAction="#addFile" prefHeight="51.0" prefWidth="136.0" text="выбрать" />
+                     <Button fx:id="button_download" mnemonicParsing="false" onAction="#inFile" prefHeight="51.0" prefWidth="167.0" text="Загрузить" />
+                  </children>
+               </HBox>
+               <HBox fx:id="hbox3" prefHeight="60.0" prefWidth="414.0">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#goSearch" prefHeight="62.0" prefWidth="305.0" text="Start" />
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+         <VBox fx:id="vbox2" prefHeight="181.0" prefWidth="469.0">
+            <children>
+               <HBox fx:id="hbox10" prefHeight="52.0" prefWidth="465.0">
+                  <children>
+                     <TextField fx:id="text_vendor" prefHeight="37.0" prefWidth="464.0" />
+                  </children>
+               </HBox>
+               <HBox fx:id="hbox11" prefHeight="56.0" prefWidth="465.0">
+                  <children>
+                     <Button fx:id="button_vendor_list" mnemonicParsing="false" onAction="#choose_vendor" prefHeight="56.0" prefWidth="165.0" text="Выбрать" />
+                     <Button mnemonicParsing="false" onAction="#inn_vendor" prefHeight="97.0" prefWidth="182.0" text="Загрузить" />
+                  </children>
+               </HBox>
+               <HBox fx:id="hbox12" prefHeight="62.0" prefWidth="465.0" />
+            </children>
+         </VBox>
+         <HBox prefHeight="160.0" prefWidth="425.0">
+            <children>
+               <Button fx:id="save_button" mnemonicParsing="false" onAction="#save_changes" prefHeight="162.0" prefWidth="435.0" text="Сохранить исзменения" />
+            </children>
+         </HBox>
+      </children>
+   </HBox>
+</VBox>

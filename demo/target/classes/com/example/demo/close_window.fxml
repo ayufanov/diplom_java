@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.CloseWindow">
+   <children>
+      <VBox fx:id="big_vbox_close" layoutX="7.0" prefHeight="401.0" prefWidth="600.0">
+         <children>
+            <HBox fx:id="big_hbox_close" prefHeight="38.0" prefWidth="600.0" />
+            <HBox fx:id="hbox_close1" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="text_field_close" prefHeight="100.0" prefWidth="597.0" text="ИЗМЕНЕНИЯ СОХРАНИ ЧЕРТ" />
+               </children>
+            </HBox>
+            <HBox fx:id="hbox_close2" prefHeight="118.0" prefWidth="600.0">
+               <children>
+                  <HBox fx:id="hbox_close3" prefHeight="118.0" prefWidth="225.0">
+                     <children>
+                        <Button fx:id="button_save_quite" mnemonicParsing="false" onAction="#save_quite" prefHeight="120.0" prefWidth="180.0" text="Сохранить и выйти " />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="close_hbox5" prefHeight="118.0" prefWidth="265.0">
+                     <children>
+                        <Button fx:id="cancel_button" mnemonicParsing="false" onAction="#cancel" prefHeight="127.0" prefWidth="240.0" text="Отмена" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="close_hbox6" prefHeight="118.0" prefWidth="249.0">
+                     <children>
+                        <Button fx:id="nosave_button" mnemonicParsing="false" onAction="#quite_nosave" prefHeight="118.0" prefWidth="198.0" text="Выйти без сохранения" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
